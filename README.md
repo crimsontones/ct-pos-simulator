@@ -1,1 +1,0 @@
-# ct-pos-simulator
