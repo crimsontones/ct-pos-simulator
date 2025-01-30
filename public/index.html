@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleverTap PoS Integration Demo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>PoS Integration Demo</h1>
+
+        <!-- Preview Section for Items to Append -->
+        <hr>
+        <div id="previewSection" class="section">
+            <h2>Items Scanned</h2>
+            <div id="itemPreviewList"></div> <!-- List to show appended items -->
+        </div>
+        <hr>
+
+        <div id="identityChecker">
+            <label for="inputIdentity">Enter Email or Phone Number:</label>
+            <input type="text" id="inputIdentity" placeholder="Enter email or phone number">
+            <button id="checkProfileButton" class="button">Check Profile</button>
+        </div>
+
+        <div id="loading">
+            <p>Loading...</p>
+        </div>
+
+        <div id="profileNotFound" class="error hidden">
+            <p>Profile not found! Please create a new profile.</p>
+        </div>
+
+        <div id="profileFound" class="confirmation hidden">
+            <p>Profile found!</p>
+        </div>
+
+
+        <div id="profileDetailsSection" class="hidden section">
+            <h2 id="profileHeader">Create Profile</h2>
+            <label for="inputFirstName">First Name:</label>
+            <input type="text" id="inputFirstName">
+            <label for="inputLastName">Last Name:</label>
+            <input type="text" id="inputLastName">
+            <label for="inputPhone">Phone:</label>
+            <input type="text" id="inputPhone" placeholder="+[country_code][number]">
+            <label for="inputEmail">Email:</label>
+            <input type="text" id="inputEmail">
+            <button id="createProfileButton" class="button">Create Profile</button>
+        </div>
+
+        <div id="profileCreated" class="confirmation hidden">
+            <p>Profile created!</p>
+        </div>
+
+        <div id="purchaseSection" class="hidden section">
+            <h2>Append Purchase to Profile</h2>
+            <button id="appendPurchaseButton" class="button">Append Purchase</button>
+        </div>
+
+        <div id="purchaseAppended" class="confirmation hidden">
+            <p>Purchase appended!</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
